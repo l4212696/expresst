@@ -345,7 +345,7 @@ button{font:inherit;font-weight:600;border:0;border-radius:14px;padding:15px 22p
   function done(ref){
     $("#card").innerHTML =
       '<div class="success"><div class="ring"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>'+
-      '<h2>Transaction submitted</h2><p class="sub" style="margin-bottom:0">We received your details and will confirm by phone.</p>'+
+      '<h2>Transaction form submitted</h2><p class="sub" style="margin-bottom:0">We received your details and will confirm by phone.</p>'+
       '<div class="ref">'+esc(ref)+'</div></div>';
     stepEls.forEach(function(s){s.classList.remove("active");s.classList.add("done");$(".dot",s).textContent="✓"});
   }
